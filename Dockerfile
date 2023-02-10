@@ -12,8 +12,7 @@ RUN apt-get update \
 
 # Download boost, untar, setup install with bootstrap and only do the Program Options library,
 # and then install
-COPY boost_1_53_0.tar.gz /home
-RUN cd /home \
+RUN cd /home && wget http://downloads.sourceforge.net/project/boost/boost/1.53.0/boost_1_53_0.tar.gz \
   && tar xfz boost_1_53_0.tar.gz \
   && rm boost_1_53_0.tar.gz \
   && cd boost_1_53_0 \
