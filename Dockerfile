@@ -16,7 +16,7 @@ RUN cd /home && wget http://downloads.sourceforge.net/project/boost/boost/1.53.0
   && tar xfz boost_1_53_0.tar.gz \
   && rm boost_1_53_0.tar.gz \
   && cd boost_1_53_0 \
-  && ./bootstrap.sh --prefix=/usr/local --with-libraries=program_options,regex,date-time,date_time-mt,filesystem-mt,filesystem,program_options-mt,regex-mt,system-mt,system,thread-mt,thread \
+  && ./bootstrap.sh --prefix=/usr/local --with-libraries=program_options,regex,date_time,filesystem,system,thread \
   && ./b2 install \
   && cd /home \
   && rm -rf boost_1_53_0
