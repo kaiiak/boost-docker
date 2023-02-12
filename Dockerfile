@@ -1,6 +1,6 @@
 # This is a test Dockerfile.
 
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 
 # Get g++ for compiling, wget to download Boost, git to clone source code repo,
 # and make to automate program compilation with Makefile provided
